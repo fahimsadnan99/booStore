@@ -5,6 +5,8 @@ import Banner from '../components/Banner/index'
 import OurTracks from "../components/OurTrack/index"
 import Primium from "../components/PrimiumLearning/index"
 import StudentSay from "../components/StudentSay/index"
+import Track from '../components/Track/Track'
+import Subscribe from '../components/Subscribe/Subscribe'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <OurTracks></OurTracks>
       <Primium></Primium>
       <StudentSay></StudentSay>
+      <Track></Track>
+      <Subscribe></Subscribe>
       
       
     </div>

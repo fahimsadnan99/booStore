@@ -1,0 +1,27 @@
+.subscribe {
+ 
+    margin: auto;
+    @apply bg-primaryClr rounded-lg mt-20 py-10 w-full md:w-[90%] lg:w-[80%]
+   
+}
+
+.subscribe input {
+
+    @apply p-3 rounded-full w-64 md:w-72 lg:w-96
+}
+
+.subscribe button {
+    @apply px-5 py-2 font-semibold rounded-full
+}
+
+.inputGroup {
+    position: relative;
+}
+
+.inputGroup button {
+    position: absolute;
+    top: 5px;
+
+
+    @apply right-[10%] md:right-[30%]  lg:right-[33%] 
+}
