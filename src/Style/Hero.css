@@ -1,0 +1,14 @@
+.heroWrapper {
+    background-image: url("../assets/heroBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+   
+    
+}
+
+.heroWrapper img {
+    height: 75%;
+    @apply ml-0 md:ml-16 lg:ml-28
+}

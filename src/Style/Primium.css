@@ -1,0 +1,8 @@
+.primiumWrapper {
+    background-image: url("../assets/PremiumBg.svg");
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
