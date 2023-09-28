@@ -34,6 +34,11 @@ const Navbar = () => {
       name: "Contact",
       link: "#Contact",
       path : "/contact",
+    },
+    {
+      name: "Sign in",
+      link: "#Sign in",
+      path : "/Sign_in",
     }
   ];
 
@@ -60,7 +65,7 @@ const Navbar = () => {
         >
           {NabLink.map((link, index) => {
             return (
-              <li key={index} className="md:ml-8">
+              <li key={index} className={link.path !== "/Sign_in" ? "md:ml-8" : "bg-[#4D2C5E] px-2 md:ml-8 py-0.5  rounded-full text-white"}>
                 <Link to={link.path}  className="text-xl " onClick={() => {
                   
                   setOpen(!open)}}>
