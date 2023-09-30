@@ -12,7 +12,7 @@ const Card = ({item}) => {
       {item !== undefined && (
         <div className="mt-3 bg-white p-3 shadow-sm shadow-black/20 sm:w-96 md:w-80 lg:w-80 xl:w-96 rounded-md">
             <div className="border-b-2 border-dotted border-red-300 pb-2 ">
-              <img src={item?.img} alt={item?.name} />
+              <img src={item?.img} alt={item?.name} className="h-52 w-full"/>
               <div className="flex justify-between">
                 <p className="text-base opacity-70 italic">{item?.cetagory}</p>
                 <img src={Star} alt="start" />

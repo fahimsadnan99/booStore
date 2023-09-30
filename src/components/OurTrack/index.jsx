@@ -12,7 +12,7 @@ const index = () => {
 
    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3   '>
     {
-      Array(3).fill(data[0]).map((item,ind)=>{
+      data.slice(0,3).map((item,ind)=>{
         return  <Card item={item} key={ind}></Card>
       })
     }

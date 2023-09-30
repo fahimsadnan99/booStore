@@ -1,0 +1,10 @@
+.passVisibale {
+    position: relative;
+}
+.passVisibale > .view {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 3px;
+    cursor: pointer;
+}
