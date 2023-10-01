@@ -6,7 +6,7 @@ import "./Navbar.css";
 import Logo from "../assets/logo.svg";
 const Navbar = () => {
   var retrievedArray = JSON.parse(localStorage.getItem('myArray'));
- console.log(retrievedArray);
+ 
   const router = useNavigate();
 
   let [open, setOpen] = useState(false);
@@ -24,11 +24,7 @@ const Navbar = () => {
       path: "/courses",
     },
 
-    {
-      name: "Contact",
-      link: "#Contact",
-      path: "/contact",
-    },
+    
     {
       name: "Sign up",
       link: "#Sign up",

@@ -4,15 +4,21 @@ import Star from "../../assets/star.svg";
 import Watch from "../../assets/clock.svg";
 import Video from "../../assets/video.svg";
 import downlode from "../../assets/download.svg";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({item}) => {
-  console.log(item);
+  var retrievedArray = JSON.parse(localStorage.getItem('myArray'));
+ 
+  const router = useNavigate();
+
+  
+  
   return (
     <div>
       {item !== undefined && (
         <div className="mt-3 bg-white p-3 shadow-sm shadow-black/20 sm:w-96 md:w-80 lg:w-80 xl:w-96 rounded-md">
             <div className="border-b-2 border-dotted border-red-300 pb-2 ">
-              <img src={item?.img} alt={item?.name} className="h-52 w-full"/>
+              <img src={item?.img} alt={item?.name} className="h-52 w-full rounded-xl"/>
               <div className="flex justify-between">
                 <p className="text-base opacity-70 italic">{item?.cetagory}</p>
                 <img src={Star} alt="start" />
@@ -39,7 +45,9 @@ const Card = ({item}) => {
 
             <button className="absolute bg-secondaryClr text-white px-5 py-2 rounded-full
             bottom-[-25px] right-28
-            ">Join Course</button>
+            "
+            onClick={()=> router(`/courses/${item.name}`)}
+            >Join Course</button>
             </div>
            
             
