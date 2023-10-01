@@ -10,7 +10,7 @@ const Details = () => {
     const [item,setItem] = useState()
 
     useEffect(()=>{
-         if(!retrievedArray.isLogin){
+         if(!retrievedArray?.isLogin){
             router("/Sign_up")
          }
        data?.filter((item)=>{
