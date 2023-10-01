@@ -1,5 +1,5 @@
 import React from 'react'
-import LeftSide from './leftSide'
+import LeftSide from './LeftSide'
 import RightSide from "./RightSide"
 import "../../Style/Primium.css" 
 
